@@ -1,3 +1,22 @@
 mat-grid-tile {
-  background: lightblue;
+  background: lightgray;
+}
+
+.page {
+  background-color: rgb(246, 246, 246);
+}
+
+.page-content {
+  padding: 5rem;
+  display: grid;
+  grid-template-columns: 5fr 1fr;
+}
+
+.add-student {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  &-button {
+    height: 3rem;
+  }
 }

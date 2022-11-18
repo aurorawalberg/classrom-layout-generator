@@ -9,4 +9,8 @@ export class PagesComponent implements OnInit {
   constructor() {}
 
   ngOnInit(): void {}
+
+  addStudent() {
+    console.log('add student');
+  }
 }

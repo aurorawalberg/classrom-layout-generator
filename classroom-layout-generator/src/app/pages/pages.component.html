@@ -1,6 +1,32 @@
-<mat-grid-list cols="2" rowHeight="2:1">
-  <mat-grid-tile>1</mat-grid-tile>
-  <mat-grid-tile>2</mat-grid-tile>
-  <mat-grid-tile>3</mat-grid-tile>
-  <mat-grid-tile>4</mat-grid-tile>
-</mat-grid-list>
+<div class="page">
+  <p>
+    <mat-toolbar color="primary">
+      <button mat-icon-button>
+        <mat-icon>school</mat-icon>
+      </button>
+      <span>Classroom layout generator</span>
+    </mat-toolbar>
+  </p>
+  <div class="page-content">
+    <mat-grid-list cols="2" rowHeight="2:1">
+      <mat-grid-tile>1</mat-grid-tile>
+      <mat-grid-tile>2</mat-grid-tile>
+      <mat-grid-tile>3</mat-grid-tile>
+      <mat-grid-tile>4</mat-grid-tile>
+    </mat-grid-list>
+    <div class="add-student">
+      <mat-form-field>
+        <mat-label>Student name</mat-label>
+        <input matInput />
+      </mat-form-field>
+      <button
+        class="add-student-button"
+        mat-raised-button
+        (click)="addStudent()"
+      >
+        <span>Add</span>
+        <mat-icon>add</mat-icon>
+      </button>
+    </div>
+  </div>
+</div>
